@@ -1,0 +1,43 @@
+
+
+1. oracle 11g 다운로드 oracle xe
+2. sql developer 설치
+3. 윈도우 검색창에서 작업 관리자 검색
+4. 작업 관리자에 Oracle 3개 있음
+5. 작업 관리자 서비스 탭에 Oracle 5개 있음
+
+6. Oracle 설정
+1) sysdba로 conn에 연결하겠다는 의미
+
+conn as sysdba
+
+2)
+enter user name: sys가 되고 password 입력하게 함.
+password는 처음 컴퓨터를 포맷한 후에 입력했던 비밀번호인 java
+
+3) 사용자 만들기
+create user 아이디 identified by madang;
+
+create user madang identified by madang;
+
+
+4) 사용자 권한 부여
+grant sysdba to madang;
+
+5) quit로 sql developer 종료하기
+
+6) 작업 표시줄에 oracle 옮겨 두고 사용하기
+
+
+7. sql developer 설치
+
+8. sql developer 열리면
+이름 madang
+사용자 이름 madang
+비번 madang
+테스트 누르고 '성공' 누르면 '접속'하면 됨.
+
+9. sql develiper에 들어가서 접속한 후 db만들기
+sqlcode01 코드를 sql 디벨로퍼에서 사용
+sqlcode02 코드를 sql 디벨로퍼에서 사용
+
