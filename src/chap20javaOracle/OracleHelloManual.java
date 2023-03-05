@@ -16,6 +16,8 @@ public class OracleHelloManual {
      * sqlDeveloper에 먼저 접속
      * java 프로젝트 생성(jdk1.8, ojdbc6_g.jar 추가한 프로젝트)
      * ojbdc6_g.jar 위치: C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib
+     * 이 프로젝트의 jdk가 맞지 않을 경우, 이클립스에서는 add jar가 아닌 add lib로 추가
+     * 이 프로젝트를 사용하기 전에 oracle11g, sqldeveloper 필요
      */
 
 
