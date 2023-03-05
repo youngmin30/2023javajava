@@ -1,4 +1,4 @@
-﻿package chap06.exam04_singleton;
+﻿package chap06.exam04_other_constructor_call.exam04_singleton;
 
 public class SingletonExample {
 	public static void main(String[] args) { // 실행 클래스

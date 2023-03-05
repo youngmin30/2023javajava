@@ -1,4 +1,4 @@
-﻿package chap06.exam04_singleton;
+﻿package chap06.exam04_other_constructor_call.exam04_singleton;
 
 public class Singleton { // 단 하나만 생성되는 객체 싱글톤
 // 싱글톤을 만들려면 클래스 외부에서 new 연산자로 생성자를 호출할 수 없도록 private를 붙여야 함.
