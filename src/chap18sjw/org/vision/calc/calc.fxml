@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.vision.calc.CalcController">
+   <children>
+      <TextField fx:id="txtA" alignment="CENTER_RIGHT" style="-fx-alignment: right;" />
+      <TextField fx:id="txtB" alignment="CENTER_RIGHT" />
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: lightgreen;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAdd" text="＋" />
+            <Button mnemonicParsing="false" onAction="#onSubtract" text="－" />
+            <Button mnemonicParsing="false" onAction="#onMultiply" text="×" />
+            <Button mnemonicParsing="false" onAction="#onDivide" text="÷" />
+            <Button mnemonicParsing="false" onAction="#onModuless" text="\%" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="txtRes" alignment="CENTER_RIGHT" />
+   </children>
+</VBox>
