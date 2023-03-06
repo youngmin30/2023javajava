@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: #0072C6; 
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: #0072C6;
+    -fx-font-size: 25pt;
+    -fx-font-weight: bold;
+}
+
+.text-area{
+	-fx-text-fill: #7868C6;
+    -fx-font-size: 15pt;
+    -fx-font-weight: bold;
+}
+.text-field{
+	-fx-text-fill: #7868C6;
+    -fx-font-size: 15pt;
+    -fx-font-weight: bold;
+}

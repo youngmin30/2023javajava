@@ -1,0 +1,17 @@
+/* 
+ * 장식 ~ 바탕색상, 글자크기와 색상, 포함할 이미지 등등 
+ * JavaFX CSS - Leave this comment until you have at least create one rule 
+ * which uses -fx-Property
+ */
+ .button {
+    -fx-background-color: #0072C6;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: #0072C6;
+    -fx-font-size: 25pt;
+    -fx-font-weight: bold;
+}
