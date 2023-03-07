@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label text="Madang Books" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <HBox prefHeight="51.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: orange;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onInsert" prefHeight="29.0" prefWidth="86.0" text="INSERT">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OnDelete" prefHeight="29.0" prefWidth="84.0" text="DELETE">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OnUpdate" prefHeight="29.0" prefWidth="101.0" text="UPDATE">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OnSelectOne" prefHeight="29.0" prefWidth="117.0" text="SELECTONE">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OnSelectbyCon" prefHeight="29.0" prefWidth="118.0" text="SELECTbyCon">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <left>
+      <SplitPane dividerPositions="0.4105793450881612" prefHeight="307.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="305.0" prefWidth="156.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="130.0" text="ISBN마당번호" />
+                  <Button layoutX="15.0" layoutY="74.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="130.0" text="도서명" />
+                  <Button layoutX="15.0" layoutY="114.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="132.0" text="출판사" />
+                  <Button layoutX="15.0" layoutY="153.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="131.0" text="가격" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="305.0" prefWidth="245.0">
+               <children>
+                  <TextField fx:id="txtBookid" layoutX="14.0" layoutY="30.0" prefHeight="29.0" prefWidth="192.0" />
+                  <TextField fx:id="txtBookname" layoutX="14.0" layoutY="70.0" prefHeight="29.0" prefWidth="193.0" />
+                  <TextField fx:id="txtBookpublisher" layoutX="14.0" layoutY="113.0" prefHeight="29.0" prefWidth="192.0" />
+                  <TextField fx:id="txtBookprice" layoutX="14.0" layoutY="153.0" prefHeight="29.0" prefWidth="193.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </left>
+   <right>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </right>
+</BorderPane>

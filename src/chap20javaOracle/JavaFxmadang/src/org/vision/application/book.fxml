@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.vision.application.BookController">
+   <top>
+      <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="393.0" text="MadangSystem _Book_" textFill="#171717" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.4" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="49.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="BOOKID" />
+                  <TextField fx:id="txtBookid" layoutX="121.0" layoutY="49.0" />
+                  <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="BOOKNAME" />
+                  <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="PUBLISHER" />
+                  <Button layoutX="14.0" layoutY="158.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="PRICE" />
+                  <TextField fx:id="txtBookname" layoutX="121.0" layoutY="87.0" />
+                  <TextField fx:id="txtPublisher" layoutX="121.0" layoutY="122.0" />
+                  <TextField fx:id="txtPrice" layoutX="121.0" layoutY="158.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="-1.0" prefHeight="425.0" prefWidth="423.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="709.0" spacing="10.0" style="-fx-background-color: lightgreen;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onInsert" text="INSERT" />
+            <Button mnemonicParsing="false" onAction="#onDelete" text="DELETE" />
+            <Button mnemonicParsing="false" onAction="#onUpdate" text="UPDATE" />
+            <Button mnemonicParsing="false" onAction="#onSelectone" text="SELECT ONE" />
+            <Button mnemonicParsing="false" onAction="#onSelectbycon" text="SelectByCon" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

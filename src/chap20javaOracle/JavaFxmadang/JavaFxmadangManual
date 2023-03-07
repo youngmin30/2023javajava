@@ -1,0 +1,20 @@
+
+
+이클립스에서 이용하는 경우
+프로젝트를 만들 때 JavaFx 프로젝트로 만들어야 한다.
+ojdbc_6g.jar 추가하여야 한다.
+
+
+1. vo 클래스 만들기
+
+2. dao 인터페이스, dao 클래스 만들기
+
+3. javaFx 만들기
+Java scenebuilder에서 fxml 파일 만들기
+fxml 파일을 프로젝트의 application 패키지로 가져오기
+main 클래스 수정하기
+Controller 만들기
+
+4. common 클래스 만들기
+
+5. 위와 같은 과정으로 Customer 프로젝트도 똑같이 만들 수 있다.(연습)
